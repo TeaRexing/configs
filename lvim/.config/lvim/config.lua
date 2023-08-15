@@ -1,4 +1,4 @@
--- TODO: Plugins und Keybinds jeweils in eigene Dateien auslagern
+-- TODO: Refactoring and clean up
 --
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
@@ -28,6 +28,12 @@ lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
 }
 lvim.builtin.which_key.mappings.s["n"] = {
   "<cmd>ZkNotes<cr>", "search notes"
+}
+lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
+  name = "Markdown",
+  p = { "<cmd>MarkdownPreview<cr>", "Preview Markdown" },
+  t = { "<cmd>MarkdownToggle<cr>", "Toggle Markdown preview" },
+  s = { "<cmd>MarkdownStop<cr>", "Stop Markdown preview" }
 }
 
 -- Plugins
@@ -69,5 +75,13 @@ lvim.plugins                           = {
         picker = "telescope",
       })
     end
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && npm install",
+    ft = "markdown",
+    config = function()
+      vim.g.mkdp_auto_start = 1
+    end,
   },
 }
