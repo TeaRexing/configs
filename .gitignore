@@ -1,0 +1,13 @@
+# ignore unneeded files (LICENSES, READMES, etc..)
+LICENSE
+readme.md
+README.md
+*.txt
+# ignore xfce4 stuff
+xfce4/.config/xfce4/desktop
+# ignore oh-my-zsh folder
+.oh-my-zsh/
+# ignore lock-files
+*-lock\.*
+# ignore tmux plugins
+*/.tmux/plugins
