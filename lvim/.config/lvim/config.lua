@@ -35,6 +35,9 @@ lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
   t = { "<cmd>MarkdownToggle<cr>", "toggle markdown preview" },
   s = { "<cmd>MarkdownStop<cr>", "stop markdown preview" }
 }
+lvim.builtin.which_key.mappings["W"] = {
+  "<cmd>qa<cr>", "close all"
+}
 
 -- Plugins
 lvim.plugins                           = {
