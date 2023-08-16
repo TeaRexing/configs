@@ -49,5 +49,10 @@ plugins=(
 )
 ################################################################################
 
+### Always start a tmux-session
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ "screen-*" ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 source $ZSH/oh-my-zsh.sh                                # source oh-my-zsh installation
 source $ZSH_CUSTOM/aliases.zsh                          # source custom aliases
