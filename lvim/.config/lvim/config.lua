@@ -19,7 +19,7 @@ lvim.builtin.which_key.mappings["t"]   = {    --- trouble
 }
 lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
   name = "Zen Mode + Twilight",
-  m = { "<cmd>ZenMode<cr>", "toggl ezenmode" },
+  m = { "<cmd>ZenMode<cr>", "toggle zenmode" },
   t = { "<cmd>Twilight<cr>", "toggle twilight"}
 }
 lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
