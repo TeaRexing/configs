@@ -17,9 +17,10 @@ lvim.builtin.which_key.mappings["t"]   = {    --- trouble
   l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
   r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
 }
-lvim.builtin.which_key.mappings["z"]   = { --- zen mode
-  name = "Zen Mode",
-  { "<cmd>ZenMode<cr>", "zenmode" }
+lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
+  name = "Zen Mode + Twilight",
+  m = { "<cmd>ZenMode<cr>", "toggl ezenmode" },
+  t = { "<cmd>Twilight<cr>", "toggle twilight"}
 }
 lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
   name = "Notes (Zettelkasten)",
