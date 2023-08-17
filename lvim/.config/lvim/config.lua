@@ -30,7 +30,9 @@ lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
   t = {"<cmd>ZkTags<cr>", "search tags"},
   b = {"<cmd>ZkBacklinks<cr>", "show backlinks"},
   l = {"<cmd>ZkLinks<cr>", "show links"},
-  c = {"<cmd>'<,'>ZkNewFromTitleSelection", "create new note from visual selection"}
+  c = {"<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection"},
+  o = {"<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret"},
+  p = {"<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret"}
 }
 lvim.builtin.which_key.mappings.s["n"] = {
   "<cmd>ZkNotes<cr>", "search notes"
