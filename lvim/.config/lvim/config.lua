@@ -25,6 +25,11 @@ lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
   name = "Notes (Zettelkasten)",
   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
   i = { "<cmd>ZkIndex<cr>", "index notes" },
+  s = {"<cmd>ZkNotes<cr>", "search notes" },
+  t = {"<cmd>ZkTags<cr>", "search tags"},
+  b = {"<cmd>ZkBacklinks<cr>", "show backlinks"},
+  l = {"<cmd>ZkLinks<cr>", "show links"},
+  c = {"<cmd>'<,'>ZkNewFromTitleSelection", "create new note from visual selection"}
 }
 lvim.builtin.which_key.mappings.s["n"] = {
   "<cmd>ZkNotes<cr>", "search notes"
