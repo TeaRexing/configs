@@ -40,7 +40,7 @@ lvim.builtin.which_key.mappings.s["n"] = {
 lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
   name = "Markdown",
   p = { "<cmd>MarkdownPreview<cr>", "preview markdown" },
-  t = { "<cmd>MarkdownToggle<cr>", "toggle markdown preview" },
+  t = { "<cmd>MarkdownPreviewToggle<cr>", "toggle markdown preview" },
   s = { "<cmd>MarkdownPreviewStop<cr>", "stop markdown preview" }
 }
 lvim.builtin.which_key.mappings["Q"] = {
