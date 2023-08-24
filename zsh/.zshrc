@@ -4,7 +4,7 @@ export LANG=de_DE.UTF-8                                 # set language
 export PATH="$HOME/.local/bin:$PATH"                    # extend $PATH by local bin folder
 ### ZSH
 export ZSH="$HOME/.config/.oh-my-zsh"                   # path to oh-my-zsh installation
-export ZSH_CUSTOM="$HOME/.config/oh-my-zsh-custom"     # path to the oh-my-zsh custom folder
+export ZSH_CUSTOM="$HOME/.config/oh-my-zsh-custom"     	# path to the oh-my-zsh custom folder
 ### SSH
 if [[ -n $SSH_CONNECTION ]]; then                       # set local and remote editor
   export EDITOR='vim'                                   # vim for remote sessions
@@ -43,7 +43,7 @@ COMPLETION_WAITING_DOTS="true"                          # show waiting dots for 
 plugins=(
 	git                                                   # keybinds for git
 	tmux                                                  # keybinds for tmux
-  # pass
+        pass
   # wd
   # fzf
 )
