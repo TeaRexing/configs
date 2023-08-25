@@ -53,6 +53,8 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="privateinternetaccess"/>
+        <value type="string" value="Barrier"/>
         <value type="string" value="blueman"/>
       </property>
     </property>
