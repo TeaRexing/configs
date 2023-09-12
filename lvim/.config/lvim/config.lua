@@ -25,6 +25,7 @@ lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
 lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
   name = "Notes (Zettelkasten)",
   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
+  u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note"},
   i = { "<cmd>ZkIndex<cr>", "index notes" },
   s = {"<cmd>ZkNotes<cr>", "search notes" },
   t = {"<cmd>ZkTags<cr>", "search tags"},
