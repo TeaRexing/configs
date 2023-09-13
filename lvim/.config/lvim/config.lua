@@ -81,7 +81,7 @@ lvim.plugins                           = {
     }
   },
   {
-    "mickael-menu/zk-nvim",
+    "mickael-menu/zk-nvim", --- Zettelkasten
     config = function()
       require("zk").setup({
         picker = "telescope",
@@ -89,7 +89,7 @@ lvim.plugins                           = {
     end
   },
   {
-    "iamcco/markdown-preview.nvim",
+    "iamcco/markdown-preview.nvim", --- Markdown Preview
     build = "cd app && npm install",
     ft = "markdown",
     config = function()
