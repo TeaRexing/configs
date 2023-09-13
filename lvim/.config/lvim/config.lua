@@ -20,20 +20,20 @@ lvim.builtin.which_key.mappings["t"]   = {    --- trouble
 lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
   name = "Zen Mode + Twilight",
   m = { "<cmd>ZenMode<cr>", "toggle zenmode" },
-  t = { "<cmd>Twilight<cr>", "toggle twilight"}
+  t = { "<cmd>Twilight<cr>", "toggle twilight" }
 }
 lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
   name = "Notes (Zettelkasten)",
   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
-  u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note"},
+  u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note" },
   i = { "<cmd>ZkIndex<cr>", "index notes" },
-  s = {"<cmd>ZkNotes<cr>", "search notes" },
-  t = {"<cmd>ZkTags<cr>", "search tags"},
-  b = {"<cmd>ZkBacklinks<cr>", "show backlinks"},
-  l = {"<cmd>ZkLinks<cr>", "show links"},
-  c = {"<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection"},
-  o = {"<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret"},
-  p = {"<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret"}
+  s = { "<cmd>ZkNotes<cr>", "search notes" },
+  t = { "<cmd>ZkTags<cr>", "search tags" },
+  b = { "<cmd>ZkBacklinks<cr>", "show backlinks" },
+  l = { "<cmd>ZkLinks<cr>", "show links" },
+  c = { "<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection" },
+  o = { "<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret" },
+  p = { "<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret" }
 }
 lvim.builtin.which_key.mappings.s["n"] = {
   "<cmd>ZkNotes<cr>", "search notes"
@@ -44,7 +44,7 @@ lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
   t = { "<cmd>MarkdownPreviewToggle<cr>", "toggle markdown preview" },
   s = { "<cmd>MarkdownPreviewStop<cr>", "stop markdown preview" }
 }
-lvim.builtin.which_key.mappings["Q"] = {
+lvim.builtin.which_key.mappings["Q"]   = {
   "<cmd>qa<cr>", "close all"
 }
 
