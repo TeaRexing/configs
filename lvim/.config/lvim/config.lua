@@ -73,6 +73,9 @@ lvim.plugins                           = {
   {
     "folke/zen-mode.nvim", --- Zen mode
     opts = {
+      window = {
+        width = 0.75,
+      }
     }
   },
   {
