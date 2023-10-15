@@ -99,4 +99,13 @@ lvim.plugins                           = {
       vim.g.mkdp_auto_start = 1
     end,
   },
+  {
+    "rmagatti/auto-session",
+    config = function()
+      require("auto-session").setup {
+        log_level = "error",
+        auto_session_suppress_dirs = { "~/", "~/Downloads", "/" },
+      }
+    end
+  }
 }
