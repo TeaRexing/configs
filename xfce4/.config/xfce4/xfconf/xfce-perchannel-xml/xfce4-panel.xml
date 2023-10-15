@@ -55,6 +55,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="830286f0-653f-11ee-8381-47c07f768d4d"/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="privateinternetaccess"/>
         <value type="string" value="Barrier"/>
