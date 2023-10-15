@@ -11,3 +11,5 @@ xfce4/.config/xfce4/desktop
 *-lock\.*
 # ignore tmux plugins
 */.tmux/plugins
+# ignore uuid-files in fonts
+*\.uuid
