@@ -46,6 +46,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="remmina"/>
         <value type="string" value="system-config-printer"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="ethernet-netzverbindung »kabelgebundene verbindung 1« ist aktiv"/>
@@ -55,6 +56,10 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="56548d90-6e8d-11ee-bcc2-15463f82c06c"/>
+        <value type="string" value="d77a5720-6e8c-11ee-93c7-a7b65bf6cdbb"/>
         <value type="string" value="830286f0-653f-11ee-8381-47c07f768d4d"/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="privateinternetaccess"/>
@@ -76,7 +81,7 @@
     </property>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="Firefox Web Browser"/>
+      <property name="known-players" type="string" value="firefox;Firefox Web Browser"/>
     </property>
     <property name="plugin-4" type="string" value="cpufreq"/>
     <property name="plugin-7" type="string" value="separator">
