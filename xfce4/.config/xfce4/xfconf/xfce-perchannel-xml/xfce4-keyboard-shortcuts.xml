@@ -58,8 +58,8 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="wmctrl -xa &quot;thunderbird&quot;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="wmctrl -xa &quot;xfce4-terminal&quot;"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;firefox&quot;"/>
       <property name="&lt;Super&gt;b" type="string" value="/home/patrick/.local/bin/barrierKeymap.sh"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;chrome&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
