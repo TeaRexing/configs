@@ -56,6 +56,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="6bbac090-795b-11ee-8672-7f44cedb949a"/>
         <value type="string" value="Microsoft Teams - Preview1"/>
         <value type="string" value="remmina-icon"/>
         <value type="string" value="56548d90-6e8d-11ee-bcc2-15463f82c06c"/>

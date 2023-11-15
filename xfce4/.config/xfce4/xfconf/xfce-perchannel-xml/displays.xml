@@ -46,8 +46,8 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="empty">
-        <property name="X" type="double" value="0"/>
-        <property name="Y" type="double" value="0"/>
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
         <property name="X" type="int" value="1920"/>
@@ -91,7 +91,7 @@
       </property>
     </property>
     <property name="DP2-2" type="string" value="Samsung Electric Company 27&quot;">
-      <property name="Active" type="bool" value="false"/>
+      <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="3a1d0f449fd074899216c6d4965b4ef1649d3c29"/>
       <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60"/>
