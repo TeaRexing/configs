@@ -43,8 +43,8 @@ COMPLETION_WAITING_DOTS="true"                          # show waiting dots for 
 plugins=(
 	git                                                   # keybinds for git
 	tmux                                                  # keybinds for tmux
-        pass
-  # wd
+  pass                                                  # easier usage of pass
+  wd                                                    # use wd to warp to dirs
   # fzf
 )
 ################################################################################
