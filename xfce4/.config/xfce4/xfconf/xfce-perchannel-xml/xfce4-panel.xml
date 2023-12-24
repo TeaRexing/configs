@@ -56,6 +56,11 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="2a866dc0-9915-11ee-af20-ff765239f148"/>
+        <value type="string" value="21c55ee0-95e0-11ee-823c-7b89bbbcfff0"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="f6c76f50-8c7d-11ee-9f96-d3034ee484f3"/>
+        <value type="string" value="a2a71480-8ab0-11ee-b6e4-61f9e1a3414c"/>
         <value type="string" value="6bbac090-795b-11ee-8672-7f44cedb949a"/>
         <value type="string" value="Microsoft Teams - Preview1"/>
         <value type="string" value="remmina-icon"/>
@@ -82,7 +87,7 @@
     </property>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="firefox;Firefox Web Browser"/>
+      <property name="known-players" type="string" value="Chrome;firefox;Firefox Web Browser"/>
     </property>
     <property name="plugin-4" type="string" value="cpufreq"/>
     <property name="plugin-7" type="string" value="separator">
