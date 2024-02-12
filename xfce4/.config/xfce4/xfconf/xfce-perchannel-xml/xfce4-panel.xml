@@ -46,6 +46,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="funknetzwerkverbindung mit »fritz!box 6490 cable« ist aktiv: fritz!box 6490 cable (81%)"/>
+        <value type="string" value="funknetzwerkverbindung mit »fritz!box 6490 cable« ist aktiv: fritz!box 6490 cable (92%)"/>
         <value type="string" value="remmina"/>
         <value type="string" value="system-config-printer"/>
         <value type="string" value="xfce4-power-manager"/>
@@ -56,6 +58,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="fd9a02b0-c8ec-11ee-a3de-4f5eaeafadef"/>
         <value type="string" value="a09b3fe0-ab26-11ee-9279-05a77821adfa"/>
         <value type="string" value="2a866dc0-9915-11ee-af20-ff765239f148"/>
         <value type="string" value="21c55ee0-95e0-11ee-823c-7b89bbbcfff0"/>
