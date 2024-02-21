@@ -44,8 +44,8 @@ plugins=(
 	git                                                   # keybinds for git
 	tmux                                                  # keybinds for tmux
   pass                                                  # easier usage of pass
-  wd                                                    # use wd to warp to dirs
-  # fzf
+  wd
+  fzf
 )
 ################################################################################
 
