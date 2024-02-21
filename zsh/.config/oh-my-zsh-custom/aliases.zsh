@@ -14,5 +14,5 @@ alias nvim="lvim"                       # use lvim instead of nvim
 ### Pass
 alias pc="pass clip"                    # open fzf to search for passwords
 ### FZF
-alias fp="fzf --preview"                # use the fzf preview
+alias fp="fzf --preview 'cat {}'"       # use the fzf preview
 ################################################################################
