@@ -5,6 +5,8 @@ README.md
 *.txt
 # ignore xfce4 stuff
 xfce4/.config/xfce4/desktop
+# ignore changes in thunar
+xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 # ignore oh-my-zsh folder
 .oh-my-zsh/
 # ignore lock-files
