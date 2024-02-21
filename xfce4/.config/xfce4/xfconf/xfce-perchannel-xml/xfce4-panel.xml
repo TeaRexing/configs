@@ -58,6 +58,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="QtPass"/>
         <value type="string" value="f22b84f0-c9c6-11ee-bda2-878b712bb376"/>
         <value type="string" value="fd9a02b0-c8ec-11ee-a3de-4f5eaeafadef"/>
         <value type="string" value="a09b3fe0-ab26-11ee-9279-05a77821adfa"/>
