@@ -8,11 +8,14 @@ alias tku="tmux ls -F'#{session_name}' | egrep '^[0-9]+$' |xargs -I% tmux kill-s
 ### ZSH
 alias rc="omz reload"                   # reload the zsh config
 alias ozc="$EDITOR $HOME/.zshrc"        # open the zsh config
+### Bat
+alias cat="bat"
 ### Editor
 alias vim="lvim"                        # use lvim instead of vim
 alias nvim="lvim"                       # use lvim instead of nvim
 ### Pass
-alias pc="pass clip"                    # open fzf to search for passwords
+alias pp="pass ff --no-copy"            # open fzf to search for passwords and print to console
+alias pc="pass ff"                      # open fzf to search for passwords and copy to clipboard
 ### FZF
-alias fp="fzf --preview 'cat {}'"       # use the fzf preview
+alias fp="fzf --preview 'bat'"       # use the fzf preview
 ################################################################################

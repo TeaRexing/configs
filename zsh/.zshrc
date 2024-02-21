@@ -21,6 +21,8 @@ export BROWSER="chromium"                               # use chromium as defaul
 export EMAIL="thunderbird"                              # use thunderbird as default mail client
 export FILES="thunar"                                   # use thunar as default file browser
 export TERMINAL="xfce4-terminal"                        # use xfce4 as default terminal
+### Pass
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 ################################################################################
 
 ### Theming ####################################################################
