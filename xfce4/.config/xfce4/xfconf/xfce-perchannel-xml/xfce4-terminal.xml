@@ -11,7 +11,7 @@
   <property name="dropdown-height" type="uint" value="42"/>
   <property name="dropdown-opacity" type="uint" value="90"/>
   <property name="dropdown-always-show-tabs" type="bool" value="false"/>
-  <property name="font-name" type="string" value="Inconsolata Nerd Font Mono 12"/>
+  <property name="font-name" type="string" value="Inconsolata Nerd Font Mono 13"/>
   <property name="misc-always-show-tabs" type="bool" value="false"/>
   <property name="misc-bell" type="bool" value="false"/>
   <property name="misc-bell-urgent" type="bool" value="false"/>

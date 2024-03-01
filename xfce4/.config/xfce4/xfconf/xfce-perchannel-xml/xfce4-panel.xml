@@ -46,6 +46,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="funknetzwerkverbindung mit »fritz!box 6490 cable« ist aktiv: fritz!box 6490 cable (90%)"/>
         <value type="string" value="funknetzwerkverbindung mit »fritz!box 6490 cable« ist aktiv: fritz!box 6490 cable (81%)"/>
         <value type="string" value="funknetzwerkverbindung mit »fritz!box 6490 cable« ist aktiv: fritz!box 6490 cable (92%)"/>
         <value type="string" value="remmina"/>
@@ -58,6 +59,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="415e7280-d723-11ee-b95f-0338b9be3ef2"/>
         <value type="string" value="QtPass"/>
         <value type="string" value="f22b84f0-c9c6-11ee-bda2-878b712bb376"/>
         <value type="string" value="fd9a02b0-c8ec-11ee-a3de-4f5eaeafadef"/>
