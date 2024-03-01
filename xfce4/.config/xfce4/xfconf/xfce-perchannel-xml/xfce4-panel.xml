@@ -26,7 +26,9 @@
         <value type="int" value="10"/>
       </property>
       <property name="mode" type="uint" value="0"/>
-      <property name="span-monitors" type="bool" value="false"/>
+      <property name="span-monitors" type="bool" value="true"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="output-name" type="string" value="Automatic"/>
     </property>
   </property>
   <property name="plugins" type="empty">
