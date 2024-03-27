@@ -17,7 +17,7 @@ export NVM_DIR="$HOME/.nvm"                             # use nvm for managing n
 ### Zettelkasten
 export ZK_NOTEBOOK_DIR="$HOME/Dokumente/Notizen"        # export zettelkasten directory
 ### Applications
-export BROWSER="chromium"                               # use chromium as default browser
+export BROWSER="firefox"                                # use firefox as default browser
 export EMAIL="thunderbird"                              # use thunderbird as default mail client
 export FILES="thunar"                                   # use thunar as default file browser
 export TERMINAL="xfce4-terminal"                        # use xfce4 as default terminal
