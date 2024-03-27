@@ -15,3 +15,5 @@ xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 */.tmux/plugins
 # ignore uuid-files in fonts
 *\.uuid
+# ignore api key for chatgpt
+/zsh/.privateEnv

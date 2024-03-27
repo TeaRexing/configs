@@ -23,6 +23,8 @@ export FILES="thunar"                                   # use thunar as default 
 export TERMINAL="xfce4-terminal"                        # use xfce4 as default terminal
 ### Pass
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+### ChatGPT
+source ~/.privateEnv
 ################################################################################
 
 ### Theming ####################################################################
