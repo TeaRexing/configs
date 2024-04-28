@@ -5,12 +5,15 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/run/media/patrick/B971-E0C8/DCIM"/>
+    <property name="last-used-media" type="string" value="/home/patrick/Media/Vlog/001"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="false"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="50"/>
+  </property>
+  <property name="parole" type="empty">
+    <property name="plugins" type="string" value="parole-notify.so"/>
   </property>
 </channel>

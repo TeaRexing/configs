@@ -12,6 +12,7 @@
       <value type="string" value="org.gnome.Pomodoro"/>
       <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="privateinternetaccess"/>
+      <value type="string" value="signal"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="Xfce volume control"/>
