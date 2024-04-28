@@ -17,5 +17,8 @@ alias nvim="lvim"                       # use lvim instead of nvim
 alias pp="pass ff --no-copy"            # open fzf to search for passwords and print to console
 alias pc="pass ff"                      # open fzf to search for passwords and copy to clipboard
 ### FZF
-alias fp="fzf --preview 'bat'"       # use the fzf preview
+alias fp="fzf --preview 'bat'"          # use the fzf preview
+### wd
+alias wa="wd add"                       # add warp point
+alias wl="wd list"                      # list warp points
 ################################################################################
