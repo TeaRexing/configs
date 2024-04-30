@@ -60,6 +60,8 @@
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;b" type="string" value="/home/patrick/.local/bin/barrierKeymap.sh"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;firefox&quot;"/>
+      <property name="&lt;Super&gt;g" type="string" value="/usr/bin/galculator"/>
+      <property name="Tools" type="string" value="/usr/bin/xfce4-settings-manager"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
