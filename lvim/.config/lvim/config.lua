@@ -56,9 +56,6 @@ lvim.plugins                           = {
       require("nvim-ts-autotag").setup()
     end,
   },
-  { --- Rainbow parentheses
-    "mrjones2014/nvim-ts-rainbow",
-  },
   { --- Trouble
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
