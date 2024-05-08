@@ -50,18 +50,18 @@ lvim.builtin.which_key.mappings["Q"]   = {
 
 -- Plugins
 lvim.plugins                           = {
-  { --- HTML autotags
-    "windwp/nvim-ts-autotag",
+  {
+    "windwp/nvim-ts-autotag", --- HTML autotags
     config = function()
       require("nvim-ts-autotag").setup()
     end,
   },
-  { --- Trouble
-    "folke/trouble.nvim",
+  {
+    "folke/trouble.nvim", --- Trouble
     cmd = "TroubleToggle",
   },
-  { --- Highlight todos
-    "folke/todo-comments.nvim",
+  {
+    "folke/todo-comments.nvim", --- Highlight todos
     event = "BufRead",
     config = function()
       require("todo-comments").setup()
@@ -97,12 +97,16 @@ lvim.plugins                           = {
     end,
   },
   {
-    "rmagatti/auto-session",
+    "rmagatti/auto-session", --- Save Sessions
     config = function()
       require("auto-session").setup {
         log_level = "error",
-        auto_session_suppress_dirs = { "~/", "~/Downloads", "/" },
+        auto_session_suppress_dirs = { "~/", "~/Downloads", "/" }
       }
     end
+  },
+  {
+    "JosefLitos/colorizer.nvim", --- Colorizer
+    require 'colorizer'.setup()
   }
 }
