@@ -7,6 +7,7 @@ README.md
 xfce4/.config/xfce4/desktop
 # ignore changes in thunar
 xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/.config/xfce4/xfce4-screenshooter
 # ignore oh-my-zsh folder
 .oh-my-zsh/
 # ignore lock-files
