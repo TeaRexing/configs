@@ -5,6 +5,7 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 --
+--
 -- Custom keybinds
 lvim.leader                            = ","  --- Switch leader key from <space> to <,>
 lvim.builtin.treesitter.rainbow.enable = true --- enable rainbow parentheses
@@ -47,6 +48,7 @@ lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
 lvim.builtin.which_key.mappings["Q"]   = {
   "<cmd>qa<cr>", "close all"
 }
+
 
 -- Plugins
 lvim.plugins                           = {
@@ -108,5 +110,9 @@ lvim.plugins                           = {
   {
     "JosefLitos/colorizer.nvim", --- Colorizer
     require 'colorizer'.setup()
+  },
+  {
+    'Exafunction/codeium.vim',
+    event = 'BufEnter'
   }
 }
