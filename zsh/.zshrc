@@ -60,3 +60,10 @@ fi
 
 source $ZSH/oh-my-zsh.sh                                # source oh-my-zsh installation
 source $ZSH_CUSTOM/aliases.zsh                          # source custom aliases
+
+### Ruby
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+### Ruby
+source ~/.rvm/scripts/rvm
+
