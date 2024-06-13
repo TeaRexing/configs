@@ -1,30 +1,34 @@
 ### Exports ####################################################################
 ### Local
-export LANG=de_DE.UTF-8                                 # set language
-export PATH="$HOME/Scripts:$HOME/.local/bin:$PATH"                    # extend $PATH by local bin folder
+export LANG=de_DE.UTF-8                                   # set language
+export PATH="$HOME/Scripts:$HOME/.local/bin:$PATH"        # extend $PATH by local bin folder
 ### ZSH
-export ZSH="$HOME/.config/.oh-my-zsh"                   # path to oh-my-zsh installation
-export ZSH_CUSTOM="$HOME/.config/oh-my-zsh-custom"     	# path to the oh-my-zsh custom folder
+export ZSH="$HOME/.config/.oh-my-zsh"                     # path to oh-my-zsh installation
+export ZSH_CUSTOM="$HOME/.config/oh-my-zsh-custom"       	# path to the oh-my-zsh custom folder
 ### SSH
-if [[ -n $SSH_CONNECTION ]]; then                       # set local and remote editor
-  export EDITOR='vim'                                   # vim for remote sessions
+if [[ -n $SSH_CONNECTION ]]; then                         # set local and remote editor
+  export EDITOR='vim'                                     # vim for remote sessions
 else
-  export EDITOR='lvim'                                  # LunarVim for local editing
+  export EDITOR='lvim'                                    # LunarVim for local editing
 fi
 ### Node version manager
-export NVM_DIR="$HOME/.nvm"                             # use nvm for managing nodejs
+export NVM_DIR="$HOME/.nvm"                               # use nvm for managing nodejs
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
 ### Zettelkasten
-export ZK_NOTEBOOK_DIR="$HOME/Dokumente/Notizen"        # export zettelkasten directory
+export ZK_NOTEBOOK_DIR="$HOME/Dokumente/Notizen"          # export zettelkasten directory
 ### Applications
-export BROWSER="firefox"                                # use firefox as default browser
-export EMAIL="thunderbird"                              # use thunderbird as default mail client
-export FILES="thunar"                                   # use thunar as default file browser
-export TERMINAL="xfce4-terminal"                        # use xfce4 as default terminal
+export BROWSER="firefox"                                  # use firefox as default browser
+export EMAIL="thunderbird"                                # use thunderbird as default mail client
+export FILES="thunar"                                     # use thunar as default file browser
+export TERMINAL="xfce4-terminal"                          # use xfce4 as default terminal
 ### Pass
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 ### ChatGPT
 source ~/.privateEnv
+### Ruby
+export GEM_HOME="$HOME/.gems"                             # use local gems
+export PATH="$HOME/.gems/bin:$PATH"                       # extend $PATH by local gems
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin" # use ruby 3.0
 ################################################################################
 
 ### Theming ####################################################################
@@ -60,9 +64,3 @@ fi
 
 source $ZSH/oh-my-zsh.sh                                # source oh-my-zsh installation
 source $ZSH_CUSTOM/aliases.zsh                          # source custom aliases
-
-### Ruby
-export PATH="$PATH:$HOME/.rvm/bin"                      # add path to rvm executable
-source ~/.rvm/scripts/rvm                               # add path to rvm scripts
-export PATH="$PATH:$HOME/.gems/bin"                     # add path to ruby gem executables
-
