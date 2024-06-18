@@ -1,7 +1,7 @@
 ### Exports ####################################################################
 ### Local
 export LANG=de_DE.UTF-8                                   # set language
-export PATH="$HOME/Scripts:$HOME/.local/bin:$PATH"        # extend $PATH by local bin folder
+export PATH="$HOME/.local/bin:$PATH"                      # extend $PATH by local bin folder
 ### ZSH
 export ZSH="$HOME/.config/.oh-my-zsh"                     # path to oh-my-zsh installation
 export ZSH_CUSTOM="$HOME/.config/oh-my-zsh-custom"       	# path to the oh-my-zsh custom folder
