@@ -5,8 +5,11 @@ README.md
 *.txt
 # ignore xfce4 stuff
 xfce4/.config/xfce4/desktop
-# ignore changes in thunar
+# ignore random changes in thunar
 xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+# ignore random changes in display config
+xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+# ignore random changes in screenshot tool
 xfce4/.config/xfce4/xfce4-screenshooter
 # ignore oh-my-zsh folder
 .oh-my-zsh/
