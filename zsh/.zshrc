@@ -54,6 +54,7 @@ plugins=(
   pass                                                  # easier usage of pass
   wd                                                    # add extension for war points
   fzf                                                   # use fzf to fuzzy search for directories/files and command history
+  npm                                                   # use npm for managing nodejs
 )
 ################################################################################
 
