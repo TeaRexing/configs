@@ -65,6 +65,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="0b8bc450-344d-11ef-80e6-91cc0e2b0d14"/>
         <value type="string" value="6dabe0f0-227a-11ef-ab76-21bb2057fca6"/>
         <value type="string" value="7302d5e0-1c03-11ef-a115-1b00124c18f7"/>
         <value type="string" value="be16cf60-1bf8-11ef-b222-bb7c548d1eac"/>
