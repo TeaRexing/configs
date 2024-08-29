@@ -1,0 +1,12 @@
+# I don't only store some of my personal scripts in ~/.local/bin but some application scripts as well
+# Ignore these
+
+# Ignore the arduino-cli
+arduino-cli
+# Ignore the script to get the latest nerd fonts
+getnf
+# Ignore the lvim script
+lvim
+# Ignore the pip3 script
+pip3
+pip3.11
