@@ -104,15 +104,6 @@ lvim.plugins                           = {
     end,
   },
   {
-    "rmagatti/auto-session", --- Save Sessions
-    config = function()
-      require("auto-session").setup {
-        log_level = "error",
-        auto_session_suppress_dirs = { "~/", "~/Downloads", "/" }
-      }
-    end
-  },
-  {
     "JosefLitos/colorizer.nvim", --- Colorizer
     require 'colorizer'.setup()
   },
