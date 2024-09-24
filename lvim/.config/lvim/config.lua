@@ -7,6 +7,8 @@
 --
 --
 -- Custom keybinds
+lvim.keys.normal_mode["<A-h>"] = ":bprevious<cr>"
+lvim.keys.normal_mode["<A-l>"] = ":bnext<cr>"
 lvim.leader                            = ","  --- Switch leader key from <space> to <,>
 lvim.builtin.treesitter.rainbow.enable = true --- enable rainbow parentheses
 lvim.builtin.which_key.mappings["t"]   = {    --- trouble
