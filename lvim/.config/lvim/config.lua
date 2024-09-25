@@ -7,10 +7,22 @@
 --
 --
 -- Custom keybinds
+lvim.leader                            = ","  --- Switch leader key from <space> to <,>
 lvim.keys.normal_mode["<A-h>"] = ":bprevious<cr>"
 lvim.keys.normal_mode["<A-l>"] = ":bnext<cr>"
-lvim.leader                            = ","  --- Switch leader key from <space> to <,>
+-- Custom Settings
 lvim.builtin.treesitter.rainbow.enable = true --- enable rainbow parentheses
+-- Autocommands
+lvim.autocommands = {
+    {
+        "BufEnter",
+        {
+            pattern = { "*.md", "*.tex" },
+            command = "set colorcolumn=40 | set wrap",
+        }
+    },
+}
+-- Whichkey keybinds
 lvim.builtin.which_key.mappings["t"]   = {    --- trouble
   name = "Diagnostics",
   t = { "<cmd>TroubleToggle<cr>", "trouble" },
