@@ -18,7 +18,7 @@ lvim.autocommands = {
         "BufEnter",
         {
             pattern = { "*.md", "*.tex" },
-            command = "set colorcolumn=40 | set wrap",
+            command = "set colorcolumn=60 | set wrap",
         }
     },
 }
