@@ -12,6 +12,7 @@ lvim.keys.normal_mode["<A-h>"] = ":bprevious<cr>"
 lvim.keys.normal_mode["<A-l>"] = ":bnext<cr>"
 -- Custom Settings
 lvim.builtin.treesitter.rainbow.enable = true --- enable rainbow parentheses
+vim.command("set colorcolumn=80")
 -- Autocommands
 lvim.autocommands = {
     {
