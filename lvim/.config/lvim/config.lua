@@ -7,24 +7,24 @@
 --
 --
 -- Custom keybinds
-lvim.leader                            = ","  --- Switch leader key from <space> to <,>
-lvim.keys.normal_mode["<A-h>"] = ":bprevious<cr>"
-lvim.keys.normal_mode["<A-l>"] = ":bnext<cr>"
+lvim.leader                            = "," --- Switch leader key from <space> to <,>
+lvim.keys.normal_mode["<A-h>"]         = ":bprevious<cr>"
+lvim.keys.normal_mode["<A-l>"]         = ":bnext<cr>"
 -- Custom Settings
 lvim.builtin.treesitter.rainbow.enable = true --- enable rainbow parentheses
-vim.command("set colorcolumn=80")
+vim.opt.colorcolumn                    = "80"
 -- Autocommands
-lvim.autocommands = {
+lvim.autocommands                      = {
+  {
+    "BufEnter",
     {
-        "BufEnter",
-        {
-            pattern = { "*.md", "*.tex" },
-            command = "set colorcolumn=60 | set wrap",
-        }
-    },
+      pattern = { "*.md", "*.tex" },
+      command = "set colorcolumn=60 | set wrap",
+    }
+  },
 }
 -- Whichkey keybinds
-lvim.builtin.which_key.mappings["t"]   = {    --- trouble
+lvim.builtin.which_key.mappings["t"]   = { --- trouble
   name = "Diagnostics",
   t = { "<cmd>TroubleToggle<cr>", "trouble" },
   w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
@@ -119,16 +119,32 @@ lvim.plugins                           = {
     end,
   },
   {
-    "JosefLitos/colorizer.nvim", --- Colorizer
-    require 'colorizer'.setup()
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
+        RGB = true,        -- #RGB hex codes
+        RRGGBB = true,     -- #RRGGBB hex codes
+        RRGGBBAA = true,   -- #RRGGBBAA hex codes
+        rgb_fn = true,     -- CSS rgb() and rgba() functions
+        hsl_fn = true,     -- CSS hsl() and hsla() functions
+        css = true,        -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn
+      })
+    end,
   },
+  --  { TODO
+  --    "litoj/colorizer.nvim", --- Colorizer
+  --    require 'colorizer'.setup()
+  --  },
   {
     'Exafunction/codeium.vim',
     event = 'BufEnter',
-    config = function ()
+    config = function()
       vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-      vim.keymap.set('i', '<c-k>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
-      vim.keymap.set('i', '<c-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+      vim.keymap.set('i', '<c-k>', function() return vim.fn['codeium#CycleCompletions'](1) end,
+        { expr = true, silent = true })
+      vim.keymap.set('i', '<c-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end,
+        { expr = true, silent = true })
       vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear'](-1) end, { expr = true, silent = true })
     end
   }
