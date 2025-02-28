@@ -38,22 +38,22 @@ lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
   m = { "<cmd>ZenMode<cr>", "toggle zenmode" },
   t = { "<cmd>Twilight<cr>", "toggle twilight" }
 }
-lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
-  name = "Notes (Zettelkasten)",
-  n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
-  u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note" },
-  i = { "<cmd>ZkIndex<cr>", "index notes" },
-  s = { "<cmd>ZkNotes<cr>", "search notes" },
-  t = { "<cmd>ZkTags<cr>", "search tags" },
-  b = { "<cmd>ZkBacklinks<cr>", "show backlinks" },
-  l = { "<cmd>ZkLinks<cr>", "show links" },
-  c = { "<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection" },
-  o = { "<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret" },
-  p = { "<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret" }
-}
-lvim.builtin.which_key.mappings.s["n"] = {
-  "<cmd>ZkNotes<cr>", "search notes"
-}
+-- lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
+--   name = "Notes (Zettelkasten)",
+--   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
+--   u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note" },
+--   i = { "<cmd>ZkIndex<cr>", "index notes" },
+--   s = { "<cmd>ZkNotes<cr>", "search notes" },
+--   t = { "<cmd>ZkTags<cr>", "search tags" },
+--   b = { "<cmd>ZkBacklinks<cr>", "show backlinks" },
+--   l = { "<cmd>ZkLinks<cr>", "show links" },
+--   c = { "<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection" },
+--   o = { "<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret" },
+--   p = { "<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret" }
+-- }
+-- lvim.builtin.which_key.mappings.s["n"] = {
+--   "<cmd>ZkNotes<cr>", "search notes"
+-- }
 lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
   name = "Markdown",
   p = { "<cmd>MarkdownPreview<cr>", "preview markdown" },
@@ -102,14 +102,14 @@ lvim.plugins                           = {
     opts = {
     }
   },
-  {
-    "mickael-menu/zk-nvim", --- Zettelkasten
-    config = function()
-      require("zk").setup({
-        picker = "telescope",
-      })
-    end
-  },
+  --{
+  --  "mickael-menu/zk-nvim", --- Zettelkasten
+  --  config = function()
+  --    require("zk").setup({
+  --      picker = "telescope",
+  --    })
+  --  end
+  --},
   {
     "iamcco/markdown-preview.nvim", --- Markdown Preview
     build = "cd app && npm install",
