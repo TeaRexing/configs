@@ -1,6 +1,7 @@
 ### Aliases ####################################################################
 ### System
-alias update="trizen -Syu"
+alias pup="trizen -Syu"
+alias prm="pacman -Qdtq | sudo pacman -Rs -"
 ### Terminal
 alias c="clear"                         # clear the terminal
 ### TMUX
