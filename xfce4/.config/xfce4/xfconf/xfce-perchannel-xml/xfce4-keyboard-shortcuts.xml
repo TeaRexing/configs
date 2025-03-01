@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-keyboard-shortcuts" version="1.0">
   <property name="commands" type="empty">
@@ -62,6 +62,8 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;firefox&quot;"/>
       <property name="&lt;Super&gt;g" type="string" value="/usr/bin/galculator"/>
       <property name="Tools" type="string" value="/usr/bin/xfce4-settings-manager"/>
+      <property name="&lt;Super&gt;o" type="string" value="/usr/bin/obsidian"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;o" type="string" value="wmctrl -xa &quot;obsidian&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
