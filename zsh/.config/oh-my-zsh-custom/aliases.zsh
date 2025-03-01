@@ -2,6 +2,9 @@
 ### System
 alias pup="trizen -Syu"
 alias prm="pacman -Qdtq | sudo pacman -Rs -"
+### SSH
+alias nas="ssh admin@nas"
+alias server="ssh admin@server"
 ### Terminal
 alias c="clear"                         # clear the terminal
 ### TMUX
