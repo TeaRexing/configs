@@ -64,6 +64,8 @@
       <property name="Tools" type="string" value="/usr/bin/xfce4-settings-manager"/>
       <property name="&lt;Super&gt;o" type="string" value="/usr/bin/obsidian"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;o" type="string" value="wmctrl -xa &quot;obsidian&quot;"/>
+      <property name="&lt;Super&gt;s" type="string" value="/usr/bin/recoll"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="wmctrl -xa &quot;recoll&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
