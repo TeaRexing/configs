@@ -2,15 +2,15 @@
 Show_Labels=false
 Small_Spacings=true
 Lines_Size=1
-Preferred_Height=421
+Preferred_Height=422
 Number_Chips=10
 
 [Chip0]
-Name=ucsi_source_psy_USBC000:001-0
+Name=coretemp-0
 Number=0
 
 [Chip1]
-Name=iwlwifi_1-0
+Name=ucsi_source_psy_USBC000:001-0
 Number=1
 
 [Chip2]
@@ -42,7 +42,7 @@ Name=ucsi_source_psy_USBC000:002-0
 Number=4
 
 [Chip5]
-Name=coretemp-0
+Name=iwlwifi_1-0
 Number=5
 
 [Chip6]

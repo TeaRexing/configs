@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
@@ -26,7 +26,7 @@
         <value type="int" value="10"/>
       </property>
       <property name="mode" type="uint" value="0"/>
-      <property name="span-monitors" type="bool" value="true"/>
+      <property name="span-monitors" type="bool" value="false"/>
       <property name="enable-struts" type="bool" value="true"/>
       <property name="output-name" type="string" value="Automatic"/>
     </property>
@@ -65,6 +65,32 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="Screenkey"/>
+        <value type="string" value="FEAAcgDtjL"/>
+        <value type="string" value="pXLPCHQodY"/>
+        <value type="string" value="A_vyOlYUrl"/>
+        <value type="string" value="dsK7eYsU9Q"/>
+        <value type="string" value="Thunderbird"/>
+        <value type="string" value="-IQuEOjNkh"/>
+        <value type="string" value="OqV1kGkHvW"/>
+        <value type="string" value="BwtPw5lbaI"/>
+        <value type="string" value="QUDlLvNXnP"/>
+        <value type="string" value="roxO6_btC1"/>
+        <value type="string" value="FeI6HVOyDe"/>
+        <value type="string" value="fMI1GuasbO"/>
+        <value type="string" value="mm_3TgK9rn"/>
+        <value type="string" value="Nb-_3ukNcK"/>
+        <value type="string" value="CS_N1KSrkc"/>
+        <value type="string" value="tYs-j3VK7U"/>
+        <value type="string" value="V67J3BuxH"/>
+        <value type="string" value="nJeN-LtWu"/>
+        <value type="string" value="kpXaWPT7v"/>
+        <value type="string" value="AJIOAKMMY"/>
+        <value type="string" value="PTSCIZDpa"/>
+        <value type="string" value="g9MdgcxB1"/>
+        <value type="string" value="fwBUlVZdW"/>
+        <value type="string" value="ownCloud"/>
+        <value type="string" value="0e6b0bb0-3eaf-11ef-a85e-739aee70b580"/>
         <value type="string" value="0b8bc450-344d-11ef-80e6-91cc0e2b0d14"/>
         <value type="string" value="6dabe0f0-227a-11ef-ab76-21bb2057fca6"/>
         <value type="string" value="7302d5e0-1c03-11ef-a115-1b00124c18f7"/>
@@ -113,7 +139,7 @@
     </property>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="Chrome;firefox;Firefox Web Browser"/>
+      <property name="known-players" type="string" value="audacious;Chrome;firefox;Firefox Web Browser;spotify"/>
     </property>
     <property name="plugin-4" type="string" value="cpufreq"/>
     <property name="plugin-7" type="string" value="separator">
