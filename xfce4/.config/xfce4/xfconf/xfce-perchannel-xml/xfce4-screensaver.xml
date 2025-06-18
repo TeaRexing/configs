@@ -10,6 +10,6 @@
       <property name="enabled" type="bool" value="true"/>
       <property name="delay" type="int" value="15"/>
     </property>
-    <property name="enabled" type="bool" value="true"/>
+    <property name="enabled" type="bool" value="false"/>
   </property>
 </channel>

@@ -66,6 +66,8 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;o" type="string" value="wmctrl -xa &quot;obsidian&quot;"/>
       <property name="&lt;Super&gt;s" type="string" value="/usr/bin/recoll"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="wmctrl -xa &quot;recoll&quot;"/>
+      <property name="&lt;Super&gt;c" type="string" value="/usr/bin/highlight-pointer"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;c" type="string" value="pkill &quot;highlight-point&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

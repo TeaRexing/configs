@@ -4,6 +4,7 @@
   <property name="log-max-size-enabled" type="bool" value="true"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="BeeperTexts"/>
       <value type="string" value="blueman"/>
       <value type="string" value="calibre"/>
       <value type="string" value="Firefox"/>
@@ -14,6 +15,7 @@
       <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="privateinternetaccess"/>
       <value type="string" value="signal"/>
+      <value type="string" value="Spotify"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="Xfce volume control"/>
