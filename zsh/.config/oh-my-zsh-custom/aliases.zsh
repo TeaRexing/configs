@@ -25,4 +25,6 @@ alias fp="fzf --preview 'bat'"          # use the fzf preview
 ### wd
 alias wa="wd add"                       # add warp point
 alias wl="wd list"                      # list warp points
+### bc 
+alias bc="BC_ENV_ARGS=<(echo "scale=2") \bc"  # always use bc with 2 decimal places
 ################################################################################
