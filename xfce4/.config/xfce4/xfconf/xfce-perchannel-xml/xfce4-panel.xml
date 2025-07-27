@@ -68,6 +68,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="MpD2XtyKV8"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="FEAAcgDtjL"/>
         <value type="string" value="pXLPCHQodY"/>
@@ -142,7 +143,7 @@
     </property>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="audacious;Chrome;firefox;Firefox Web Browser;spotify"/>
+      <property name="known-players" type="string" value="audacious;BeeperTexts;Chrome;firefox;Firefox Web Browser;spotify"/>
     </property>
     <property name="plugin-4" type="string" value="cpufreq"/>
     <property name="plugin-7" type="string" value="separator">
