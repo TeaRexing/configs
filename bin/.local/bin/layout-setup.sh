@@ -92,21 +92,23 @@ THUNAR_WIN=$(find_window "Thunar" | tail -1)
 # Fenster verschieben
 if [[ -n "$FIREFOX_WIN" ]]; then
     wmctrl -i -r "$FIREFOX_WIN" -b remove,maximized_vert,maximized_horz
-    wmctrl -i -r "$FIREFOX_WIN" -e 0,$TOP_MONITOR_X,$TOP_MONITOR_Y,$TOP_MONITOR_WIDTH,$TOP_MONITOR_HEIGHT
+    wmctrl -i -r "$FIREFOX_WIN" -e 0,$TOP_MONITOR_X,$TOP_MONITOR_Y,100,100
     wmctrl -i -r "$FIREFOX_WIN" -b add,maximized_vert,maximized_horz
 fi
 
 if [[ -n "$THUNDERBIRD_WIN" ]]; then
     wmctrl -i -r "$THUNDERBIRD_WIN" -b remove,maximized_vert,maximized_horz
-    wmctrl -i -r "$THUNDERBIRD_WIN" -e 0,$BOTTOM_MONITOR_X,$BOTTOM_MONITOR_Y,$BOTTOM_MONITOR_WIDTH,$BOTTOM_MONITOR_HEIGHT
+    wmctrl -i -r "$THUNDERBIRD_WIN" -e 0,$BOTTOM_MONITOR_X,$BOTTOM_MONITOR_Y,100,100
     wmctrl -i -r "$THUNDERBIRD_WIN" -b add,maximized_vert,maximized_horz
 fi
 
 # Hier noch das Padding mit in Betracht ziehen
 if [[ -n "$BEEPER_WIN" ]]; then
+  wmctrl -i -r "$BEEPER_WIN" -b remove,maximized_vert,maximized_horz
   wmctrl -i -r "$BEEPER_WIN" -e 0,$VERT_MONITOR_X,$((VERT_MONITOR_Y + 26)),$VERT_MONITOR_WIDTH,$((VERT_MONITOR_HEIGHT / 2 - 52))
 fi
 
 if [[ -n "$THUNAR_WIN" ]]; then
+    wmctrl -i -r "$THUNAR_WIN" -b remove,maximized_vert,maximized_horz
     wmctrl -i -r "$THUNAR_WIN" -e 0,$VERT_MONITOR_X,$((VERT_MONITOR_Y + VERT_MONITOR_HEIGHT / 2 + 52)),$VERT_MONITOR_WIDTH,$((VERT_MONITOR_HEIGHT / 2))
 fi
