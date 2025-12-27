@@ -69,6 +69,8 @@
       <property name="&lt;Super&gt;c" type="string" value="/usr/bin/highlight-pointer"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;c" type="string" value="pkill &quot;highlight-point&quot;"/>
       <property name="&lt;Super&gt;w" type="string" value="/home/patrick/.local/bin/layout-setup.sh"/>
+      <property name="&lt;Super&gt;a" type="string" value="/usr/bin/affine"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="wmctrl -xa &quot;affine&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
