@@ -71,6 +71,7 @@
       <property name="&lt;Super&gt;w" type="string" value="/home/patrick/.local/bin/layout-setup.sh"/>
       <property name="&lt;Super&gt;a" type="string" value="/usr/bin/affine"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="wmctrl -xa &quot;affine&quot;"/>
+      <property name="&lt;Super&gt;t" type="string" value="/usr/bin/ktimetracker"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
