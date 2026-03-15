@@ -8,7 +8,7 @@
   <property name="color-bold-use-default" type="bool" value="false"/>
   <property name="color-palette" type="string" value="#3B4252;#BF616A;#A3BE8C;#EBCB8B;#81A1C1;#B48EAD;#88C0D0;#E5E9F0;#4C566A;#BF616A;#A3BE8C;#EBCB8B;#81A1C1;#B48EAD;#8FBCBB;#ECEFF4"/>
   <property name="dropdown-width" type="uint" value="100"/>
-  <property name="dropdown-height" type="uint" value="42"/>
+  <property name="dropdown-height" type="uint" value="65"/>
   <property name="dropdown-opacity" type="uint" value="90"/>
   <property name="dropdown-always-show-tabs" type="bool" value="false"/>
   <property name="font-name" type="string" value="Inconsolata Nerd Font Mono 13"/>

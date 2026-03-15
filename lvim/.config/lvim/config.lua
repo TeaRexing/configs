@@ -70,6 +70,26 @@ lvim.builtin.which_key.mappings["C"]   = {
   d = { "<cmd>lua require('codeium').disable()<cr>", "disable codeium" }
 }
 
+lvim.builtin.which_key.mappings["a"]   = {
+  name = "Arduino",
+  v = { "<cmd>ArduinoVerify<CR>", "Verify / Compile" },
+    u = { "<cmd>ArduinoUpload<CR>", "Upload Firmware" },
+    s = { "<cmd>ArduinoSerial<CR>", "Serial Monitor" },
+
+    b = { "<cmd>ArduinoChooseBoard<CR>", "Choose Board" },
+    p = { "<cmd>ArduinoChoosePort<CR>", "Choose Port" },
+
+    c = {
+      "<cmd>!arduino-cli compile --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
+      "Compile (CLI)"
+    },
+
+    f = {
+      "<cmd>!arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
+      "Upload (CLI)"
+    }
+}
+
 -- Plugins
 lvim.plugins                           = {
   {
@@ -147,5 +167,28 @@ lvim.plugins                           = {
         { expr = true, silent = true })
       vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear'](-1) end, { expr = true, silent = true })
     end
+  },
+  {
+    "stevearc/vim-arduino",
+    ft = { "arduino" }
   }
 }
+
+-- Arduino LSP
+local lspconfig = require("lspconfig")
+
+lspconfig.arduino_language_server.setup{
+  cmd = {
+    "arduino-language-server",
+    "-cli", "arduino-cli",
+    "-cli-config", "/home/patrick/.arduino15/arduino-cli.yaml",
+    "-fqbn", "arduino:avr:nano:cpu=atmega328old"
+  },
+  filetypes = { "arduino" }
+}
+vim.filetype.add({
+  extension = {
+    ino = "arduino"
+  }
+})
+
