@@ -63,6 +63,7 @@ lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
 lvim.builtin.which_key.mappings["Q"]   = {
   "<cmd>qa<cr>", "close all"
 }
+
 lvim.builtin.which_key.mappings["C"]   = {
   name = "Codeium",
   t = { "<cmd>lua require('codeium').toggle()<cr>", "toggle codeium" },
@@ -73,21 +74,28 @@ lvim.builtin.which_key.mappings["C"]   = {
 lvim.builtin.which_key.mappings["a"]   = {
   name = "Arduino",
   v = { "<cmd>ArduinoVerify<CR>", "Verify / Compile" },
-    u = { "<cmd>ArduinoUpload<CR>", "Upload Firmware" },
-    s = { "<cmd>ArduinoSerial<CR>", "Serial Monitor" },
+  u = { "<cmd>ArduinoUpload<CR>", "Upload Firmware" },
+  s = { "<cmd>ArduinoSerial<CR>", "Serial Monitor" },
 
-    b = { "<cmd>ArduinoChooseBoard<CR>", "Choose Board" },
-    p = { "<cmd>ArduinoChoosePort<CR>", "Choose Port" },
+  b = { "<cmd>ArduinoChooseBoard<CR>", "Choose Board" },
+  p = { "<cmd>ArduinoChoosePort<CR>", "Choose Port" },
 
-    c = {
-      "<cmd>!arduino-cli compile --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
-      "Compile (CLI)"
-    },
+  c = {
+    "<cmd>!arduino-cli compile --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
+    "Compile (CLI)"
+  },
 
-    f = {
-      "<cmd>!arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
-      "Upload (CLI)"
-    }
+  f = {
+    "<cmd>!arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:nano:cpu=atmega328old %:h<CR>",
+    "Upload (CLI)"
+  }
+}
+
+lvim.builtin.which_key.mappings["x"]   = {
+  name = 'LaTeX',
+  c = { ":!latexmk -pdf -lualatex %<CR>", "Compile" },
+  m = { ":!latexmk -pdf -lualatex main.tex>", "Compile" },
+  o = { ":!zathura %<.pdf<CR>", "Open PDF" }
 }
 
 -- Plugins
@@ -122,14 +130,6 @@ lvim.plugins                           = {
     opts = {
     }
   },
-  --{
-  --  "mickael-menu/zk-nvim", --- Zettelkasten
-  --  config = function()
-  --    require("zk").setup({
-  --      picker = "telescope",
-  --    })
-  --  end
-  --},
   {
     "iamcco/markdown-preview.nvim", --- Markdown Preview
     build = "cd app && npm install",
@@ -142,13 +142,13 @@ lvim.plugins                           = {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
-        RGB = true,        -- #RGB hex codes
-        RRGGBB = true,     -- #RRGGBB hex codes
-        RRGGBBAA = true,   -- #RRGGBBAA hex codes
-        rgb_fn = true,     -- CSS rgb() and rgba() functions
-        hsl_fn = true,     -- CSS hsl() and hsla() functions
-        css = true,        -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-        css_fn = true,     -- Enable all CSS *functions*: rgb_fn, hsl_fn
+        RGB = true,      -- #RGB hex codes
+        RRGGBB = true,   -- #RRGGBB hex codes
+        RRGGBBAA = true, -- #RRGGBBAA hex codes
+        rgb_fn = true,   -- CSS rgb() and rgba() functions
+        hsl_fn = true,   -- CSS hsl() and hsla() functions
+        css = true,      -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        css_fn = true,   -- Enable all CSS *functions*: rgb_fn, hsl_fn
       })
     end,
   },
@@ -175,9 +175,9 @@ lvim.plugins                           = {
 }
 
 -- Arduino LSP
-local lspconfig = require("lspconfig")
+local lspconfig                        = require("lspconfig")
 
-lspconfig.arduino_language_server.setup{
+lspconfig.arduino_language_server.setup {
   cmd = {
     "arduino-language-server",
     "-cli", "arduino-cli",
@@ -191,4 +191,3 @@ vim.filetype.add({
     ino = "arduino"
   }
 })
-
