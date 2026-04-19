@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ┌──────────────────────────────┐
-# │          Firefox             │ Oberer horizontaler Monitor
+# │          Chrome              │ Oberer horizontaler Monitor
 # └──────────────────────────────┘
 # ┌──────────────────────────────┐
 # │         Thunderbird          │ Unterer horizontaler Monitor
@@ -77,23 +77,23 @@ find_window() {
 }
 
 # Programme starten
-start_if_not_running "firefox" "firefox"
+start_if_not_running "chromium" "chromium"
 start_if_not_running "thunderbird" "thunderbird"
 start_if_not_running "beepertexts" "beeper"
 start_if_not_running "Thunar" "thunar"
 
 # Auf Fenster warten
-FIREFOX_WIN=$(find_window "firefox" | tail -1)
+CHROMIUM_WIN=$(find_window "chromium" | tail -1)
 THUNDERBIRD_WIN=$(find_window "thunderbird" | tail -1)
 BEEPER_WIN=$(find_window "Beeper" | tail -1)
 THUNAR_WIN=$(find_window "Thunar" | tail -1)
 
 
 # Fenster verschieben
-if [[ -n "$FIREFOX_WIN" ]]; then
-    wmctrl -i -r "$FIREFOX_WIN" -b remove,maximized_vert,maximized_horz
-    wmctrl -i -r "$FIREFOX_WIN" -e 0,$TOP_MONITOR_X,$TOP_MONITOR_Y,100,100
-    wmctrl -i -r "$FIREFOX_WIN" -b add,maximized_vert,maximized_horz
+if [[ -n "$CHROMIUM_WIN" ]]; then
+    wmctrl -i -r "$CHROMIUM_WIN" -b remove,maximized_vert,maximized_horz
+    wmctrl -i -r "$CHROMIUM_WIN" -e 0,$TOP_MONITOR_X,$TOP_MONITOR_Y,100,100
+    wmctrl -i -r "$CHROMIUM_WIN" -b add,maximized_vert,maximized_horz
 fi
 
 if [[ -n "$THUNDERBIRD_WIN" ]]; then
