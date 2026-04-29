@@ -15,6 +15,7 @@
       <value type="string" value="org.gnome.Pomodoro"/>
       <value type="string" value="org.gnome.Solanum"/>
       <value type="string" value="org.kde.kdenlive"/>
+      <value type="string" value="org.mozilla.Thunderbird"/>
       <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="privateinternetaccess"/>
       <value type="string" value="signal"/>

@@ -70,6 +70,7 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="droidcam"/>
         <value type="string" value="wvE_g8XNbe"/>
         <value type="string" value="4bQY69giYp"/>
         <value type="string" value="l1c1rMPzC7"/>
