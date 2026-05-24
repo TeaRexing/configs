@@ -17,7 +17,7 @@ export NVM_DIR="$HOME/.nvm"                               # use nvm for managing
 ### Zettelkasten
 export ZK_NOTEBOOK_DIR="$HOME/Dokumente/Notizen"          # export zettelkasten directory
 ### Applications
-export BROWSER="firefox"                                  # use firefox as default browser
+export BROWSER="chromium"                                  # use firefox as default browser
 export EMAIL="thunderbird"                                # use thunderbird as default mail client
 export FILES="thunar"                                     # use thunar as default file browser
 export TERMINAL="xfce4-terminal"                          # use xfce4 as default terminal
@@ -65,3 +65,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh                                # source oh-my-zsh installation
 source $ZSH_CUSTOM/aliases.zsh                          # source custom aliases
+source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh # source zsh-autopair
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # source zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # source zsh-syntax-highlighting
