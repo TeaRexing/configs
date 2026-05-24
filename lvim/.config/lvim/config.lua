@@ -38,6 +38,9 @@ lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
   m = { "<cmd>ZenMode<cr>", "toggle zenmode" },
   t = { "<cmd>Twilight<cr>", "toggle twilight" }
 }
+lvim.builtin.nvimtree.setup.diagnostics = { --- disable nvimtree diagnostics
+  enable = false,
+}
 -- lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
 --   name = "Notes (Zettelkasten)",
 --   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
