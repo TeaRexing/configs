@@ -67,12 +67,12 @@ lvim.builtin.which_key.mappings["Q"]   = {
   "<cmd>qa<cr>", "close all"
 }
 
-lvim.builtin.which_key.mappings["C"]   = {
-  name = "Codeium",
-  t = { "<cmd>lua require('codeium').toggle()<cr>", "toggle codeium" },
-  e = { "<cmd>lua require('codeium').enable()<cr>", "enable codeium" },
-  d = { "<cmd>lua require('codeium').disable()<cr>", "disable codeium" }
-}
+--- lvim.builtin.which_key.mappings["C"]   = {
+---   name = "Codeium",
+---   t = { "<cmd>lua require('codeium').toggle()<cr>", "toggle codeium" },
+---   e = { "<cmd>lua require('codeium').enable()<cr>", "enable codeium" },
+---   d = { "<cmd>lua require('codeium').disable()<cr>", "disable codeium" }
+--- }
 
 lvim.builtin.which_key.mappings["a"]   = {
   name = "Arduino",
@@ -159,18 +159,18 @@ lvim.plugins                           = {
   --    "litoj/colorizer.nvim", --- Colorizer
   --    require 'colorizer'.setup()
   --  },
-  {
-    'Exafunction/codeium.vim',
-    event = 'BufEnter',
-    config = function()
-      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-      vim.keymap.set('i', '<c-k>', function() return vim.fn['codeium#CycleCompletions'](1) end,
-        { expr = true, silent = true })
-      vim.keymap.set('i', '<c-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end,
-        { expr = true, silent = true })
-      vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear'](-1) end, { expr = true, silent = true })
-    end
-  },
+  -- {
+  --   'Exafunction/codeium.vim',
+  --   event = 'BufEnter',
+  --   config = function()
+  --     vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+  --     vim.keymap.set('i', '<c-k>', function() return vim.fn['codeium#CycleCompletions'](1) end,
+  --       { expr = true, silent = true })
+  --     vim.keymap.set('i', '<c-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end,
+  --       { expr = true, silent = true })
+  --     vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear'](-1) end, { expr = true, silent = true })
+  --   end
+  -- },
   {
     "stevearc/vim-arduino",
     ft = { "arduino" }
