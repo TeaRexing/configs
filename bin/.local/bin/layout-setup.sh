@@ -77,7 +77,7 @@ find_window() {
 }
 
 # Programme starten
-start_if_not_running "chromium" "chromium"
+start_if_not_running "google-chrome" "google-chrome"
 start_if_not_running "thunderbird" "thunderbird"
 start_if_not_running "beepertexts" "beeper"
 start_if_not_running "Thunar" "thunar"
