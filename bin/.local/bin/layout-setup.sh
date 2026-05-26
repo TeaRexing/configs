@@ -83,7 +83,7 @@ start_if_not_running "beepertexts" "beeper"
 start_if_not_running "Thunar" "thunar"
 
 # Auf Fenster warten
-CHROMIUM_WIN=$(find_window "chromium" | tail -1)
+CHROMIUM_WIN=$(find_window "google-chrome" | tail -1)
 THUNDERBIRD_WIN=$(find_window "thunderbird" | tail -1)
 BEEPER_WIN=$(find_window "Beeper" | tail -1)
 THUNAR_WIN=$(find_window "Thunar" | tail -1)
