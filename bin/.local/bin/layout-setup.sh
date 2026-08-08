@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ┌──────────────────────────────┐
-# │          Chrome              │ Oberer horizontaler Monitor
+# │          Chromium            │ Oberer horizontaler Monitor
 # └──────────────────────────────┘
 # ┌──────────────────────────────┐
 # │         Thunderbird          │ Unterer horizontaler Monitor
@@ -14,7 +14,7 @@
 
 # Dieses Skript startet (falls nötig) Firefox, Thunderbird, Beeper und Thunar
 # und ordnet die Fenster automatisch auf einem 3-Monitor-Setup an:
-# - Firefox fullscreen auf dem oberen rechten Monitor
+# - Chromium fullscreen auf dem oberen rechten Monitor
 # - Thunderbird fullscreen auf dem unteren rechten Monitor
 # - Beeper oben und Thunar unten auf dem linken vertikalen Monitor
 
@@ -77,13 +77,13 @@ find_window() {
 }
 
 # Programme starten
-start_if_not_running "google-chrome" "google-chrome"
+start_if_not_running "chromium" "chromium"
 start_if_not_running "thunderbird" "thunderbird"
 start_if_not_running "beepertexts" "beeper"
 start_if_not_running "Thunar" "thunar"
 
 # Auf Fenster warten
-CHROMIUM_WIN=$(find_window "google-chrome" | tail -1)
+CHROMIUM_WIN=$(find_window "chromium" | tail -1)
 THUNDERBIRD_WIN=$(find_window "thunderbird" | tail -1)
 BEEPER_WIN=$(find_window "Beeper" | tail -1)
 THUNAR_WIN=$(find_window "Thunar" | tail -1)

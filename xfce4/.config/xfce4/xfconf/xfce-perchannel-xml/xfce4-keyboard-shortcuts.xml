@@ -58,7 +58,6 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="wmctrl -xa &quot;thunderbird&quot;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="wmctrl -xa &quot;xfce4-terminal&quot;"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
-      <property name="&lt;Super&gt;b" type="string" value="/home/patrick/.local/bin/barrierKeymap.sh"/>
       <property name="&lt;Super&gt;g" type="string" value="/usr/bin/galculator"/>
       <property name="Tools" type="string" value="/usr/bin/xfce4-settings-manager"/>
       <property name="&lt;Super&gt;o" type="string" value="/usr/bin/obsidian"/>
@@ -66,8 +65,12 @@
       <property name="&lt;Super&gt;c" type="string" value="/usr/bin/highlight-pointer"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;c" type="string" value="pkill &quot;highlight-point&quot;"/>
       <property name="&lt;Super&gt;w" type="string" value="/home/patrick/.local/bin/layout-setup.sh"/>
-      <property name="&lt;Super&gt;a" type="string" value="/usr/bin/affine"/>
       <property name="&lt;Super&gt;t" type="string" value="/usr/bin/ktimetracker"/>
+      <property name="&lt;Super&gt;a" type="string" value="/usr/bin/claude-desktop"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="wmctrl -xa &quot;claude&quot;"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;o" type="string" value="wmctrl -xa &quot;obsidian&quot;"/>
+      <property name="&lt;Super&gt;b" type="string" value="/usr/bin/beeper"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;b" type="string" value="wmctrl -xa &quot;beeper&quot;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;chromium&quot;"/>
     </property>
   </property>
@@ -140,7 +143,6 @@
       <property name="Down" type="string" value="down_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="string" value="move_window_right_key"/>
       <property name="Up" type="string" value="up_key"/>
-      <property name="Escape" type="string" value="cancel_key"/>
       <property name="&lt;Alt&gt;&lt;Shift&gt;Tab" type="string" value="cycle_reverse_windows_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
       <property name="Left" type="string" value="left_key"/>
