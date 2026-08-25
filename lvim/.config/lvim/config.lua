@@ -26,12 +26,12 @@ lvim.autocommands                      = {
 -- Whichkey keybinds
 lvim.builtin.which_key.mappings["t"]   = { --- trouble
   name = "Diagnostics",
-  t = { "<cmd>TroubleToggle<cr>", "trouble" },
-  w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
-  d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
-  q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
-  l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
-  r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
+  t = { "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics" },
+  b = { "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer" },
+  s = { "<cmd>Trouble symbols toggle focus=false<cr>", "Symbols" },
+  r = { "<cmd>Trouble lsp toggle focus=false<cr>", "LSP Def/Ref" },
+  l = { "<cmd>Trouble loclist toggle<cr>", "Location List" },
+  q = { "<cmd>Trouble qflist toggle<cr>", "Quickfix" },
 }
 lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
   name = "Zen Mode + Twilight",
@@ -41,39 +41,9 @@ lvim.builtin.which_key.mappings["z"]   = { --- zen mode + twilight
 lvim.builtin.nvimtree.setup.diagnostics = { --- disable nvimtree diagnostics
   enable = false,
 }
--- lvim.builtin.which_key.mappings["n"]   = { --- notes (zettelkasten)
---   name = "Notes (Zettelkasten)",
---   n = { "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", "new note" },
---   u = { "<cmd>ZkNew {title = vim.fn.input('Title: '), dir = 'private'}<cr>", "new unshared note" },
---   i = { "<cmd>ZkIndex<cr>", "index notes" },
---   s = { "<cmd>ZkNotes<cr>", "search notes" },
---   t = { "<cmd>ZkTags<cr>", "search tags" },
---   b = { "<cmd>ZkBacklinks<cr>", "show backlinks" },
---   l = { "<cmd>ZkLinks<cr>", "show links" },
---   c = { "<cmd>'<,'>ZkNewFromTitleSelection<cr>", "create new note from visual selection" },
---   o = { "<cmd>lua vim.lsp.buf.definition()<cr>", "open link under caret" },
---   p = { "<cmd>lua vim.lsp.buf.hover()<cr>", "preview note under caret" }
--- }
--- lvim.builtin.which_key.mappings.s["n"] = {
---   "<cmd>ZkNotes<cr>", "search notes"
--- }
-lvim.builtin.which_key.mappings["m"]   = { --- markdown preview
-  name = "Markdown",
-  p = { "<cmd>MarkdownPreview<cr>", "preview markdown" },
-  t = { "<cmd>MarkdownPreviewToggle<cr>", "toggle markdown preview" },
-  s = { "<cmd>MarkdownPreviewStop<cr>", "stop markdown preview" }
-}
 lvim.builtin.which_key.mappings["Q"]   = {
   "<cmd>qa<cr>", "close all"
 }
-
---- lvim.builtin.which_key.mappings["C"]   = {
----   name = "Codeium",
----   t = { "<cmd>lua require('codeium').toggle()<cr>", "toggle codeium" },
----   e = { "<cmd>lua require('codeium').enable()<cr>", "enable codeium" },
----   d = { "<cmd>lua require('codeium').disable()<cr>", "disable codeium" }
---- }
-
 lvim.builtin.which_key.mappings["a"]   = {
   name = "Arduino",
   v = { "<cmd>ArduinoVerify<CR>", "Verify / Compile" },
@@ -93,7 +63,6 @@ lvim.builtin.which_key.mappings["a"]   = {
     "Upload (CLI)"
   }
 }
-
 lvim.builtin.which_key.mappings["x"]   = {
   name = 'LaTeX',
   c = { ":!latexmk -pdf -lualatex %<CR>", "Compile" },
@@ -110,8 +79,14 @@ lvim.plugins                           = {
     end,
   },
   {
+    "nvim-treesitter/nvim-treesitter", --- TreeSitter
+    branch = "main",
+    build = ":TSUpdate",
+  },
+  {
     "folke/trouble.nvim", --- Trouble
-    cmd = "TroubleToggle",
+    opts = {},
+    cmd = "Trouble",
   },
   {
     "folke/todo-comments.nvim", --- Highlight todos
@@ -134,14 +109,6 @@ lvim.plugins                           = {
     }
   },
   {
-    "iamcco/markdown-preview.nvim", --- Markdown Preview
-    build = "cd app && npm install",
-    ft = "markdown",
-    config = function()
-      vim.g.mkdp_auto_start = 1
-    end,
-  },
-  {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
@@ -155,22 +122,6 @@ lvim.plugins                           = {
       })
     end,
   },
-  --  { TODO
-  --    "litoj/colorizer.nvim", --- Colorizer
-  --    require 'colorizer'.setup()
-  --  },
-  -- {
-  --   'Exafunction/codeium.vim',
-  --   event = 'BufEnter',
-  --   config = function()
-  --     vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-  --     vim.keymap.set('i', '<c-k>', function() return vim.fn['codeium#CycleCompletions'](1) end,
-  --       { expr = true, silent = true })
-  --     vim.keymap.set('i', '<c-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end,
-  --       { expr = true, silent = true })
-  --     vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear'](-1) end, { expr = true, silent = true })
-  --   end
-  -- },
   {
     "stevearc/vim-arduino",
     ft = { "arduino" }
@@ -178,7 +129,7 @@ lvim.plugins                           = {
 }
 
 -- Arduino LSP
-local lspconfig                        = require("lspconfig")
+local lspconfig = require("lspconfig")
 
 lspconfig.arduino_language_server.setup {
   cmd = {
@@ -194,3 +145,8 @@ vim.filetype.add({
     ino = "arduino"
   }
 })
+
+lvim.builtin.nvimtree.setup.diagnostics = { --- disable nvimtree diagnostics
+  enable = false,
+}
+lvim.builtin.indentlines.active = false
