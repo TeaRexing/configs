@@ -65,13 +65,12 @@
       <property name="&lt;Super&gt;c" type="string" value="/usr/bin/highlight-pointer"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;c" type="string" value="pkill &quot;highlight-point&quot;"/>
       <property name="&lt;Super&gt;w" type="string" value="/home/patrick/.local/bin/layout-setup.sh"/>
-      <property name="&lt;Super&gt;t" type="string" value="/usr/bin/ktimetracker"/>
-      <property name="&lt;Super&gt;a" type="string" value="/usr/bin/claude-desktop"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="wmctrl -xa &quot;claude&quot;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;o" type="string" value="wmctrl -xa &quot;obsidian&quot;"/>
       <property name="&lt;Super&gt;b" type="string" value="/usr/bin/beeper"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;b" type="string" value="wmctrl -xa &quot;beeper&quot;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;i" type="string" value="wmctrl -xa &quot;chromium&quot;"/>
+      <property name="&lt;Super&gt;a" type="string" value="/usr/bin/claude-desktop"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="wmctrl -xa &quot;Claude&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
