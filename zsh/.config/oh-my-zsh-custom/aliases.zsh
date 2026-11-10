@@ -29,4 +29,6 @@ alias wl="wd list"                      # list warp points
 alias bc="BC_ENV_ARGS=<(echo "scale=2") \bc"  # always use bc with 2 decimal places
 ### npm
 alias nrw="npm run watch"               # run the watch command in npm for webdev
+alias nrp="npm run production"          # run the production comman in npm for webdev
+#
 ################################################################################
